@@ -60,7 +60,7 @@ function login_data() {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_COOKIEJAR, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_USERAGENT, $GLOBALS['uagent']);
-    curl_setopt($ch, CURLOPT_URL, "https://plus.google.com/");
+    curl_setopt($ch, CURLOPT_URL, "https://plus.google.com/app/basic/login");
     curl_setopt($ch, CURLOPT_COOKIEFILE, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
@@ -70,7 +70,7 @@ function login_data() {
     $buf = str_replace( '&', '&amp;', $buf ); // now encode them all again
     curl_close($ch);
 
-    echo "\n[+] Sending GET request to: https://plus.google.com/\n\n";
+    echo "\n[+] Sending GET request to: https://plus.google.com/app/basic/login\n\n";
 
     $toreturn = '';
 
