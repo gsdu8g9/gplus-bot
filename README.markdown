@@ -1,18 +1,15 @@
 # Google Plus status update bot
 
-* Readme date: Mar 2 2012
-* Contributors: lukapusic
+* Contributors: [lukapusic](https://github.com/lukapusic)
 * Author: Luka Pusic <luka@pusic.si>
-* URI: http://360percents.com/posts/first-google-google-plus-status-update-bot-in-php/
+* Blog post: http://360percents.com/posts/first-google-google-plus-status-update-bot-in-php/
 
 ## Description
-This bot can log into your Google account and update your Google Plus status,
-but you can extend it to other Google products. All this is done without Google API,
-OAuth, tokens or any other annoying products.
-
+Google Plus status update bot can log into Google account and update Google+ status. All this is done without Google API,
+OAuth, tokens or any other annoying products. The script tries to mimic a real, human login. While I try to maintain the script and keep it working, it happens from time to time that Google changes their source code, rendering the script unusable, therefore the code is somewhat unreliable and should be used with this in mind.
 
 ## System requirements
-* PHP curl extension
+* PHP with Curl extension
 
 ## Instructions
 1. Open gplus.php and edit email and password
@@ -20,31 +17,27 @@ OAuth, tokens or any other annoying products.
 
 ## Changelog
 
-#### Nov 11 2011
+#### Nov 11, 2011
 * added debug parameter, pageid parameter, pc_uagent parameter
 * page updating still not implemented
 
-#### Nov 16 2011
+#### Nov 16, 2011
 * changed the way baseurl is determined, google removed base href
 
-#### Dec 15 2011
+#### Dec 15, 2011
 * post visibility is not public by default
 
-#### Mar 2 2012
+#### Mar 2, 2012
 * fixed "&" encoding (thx Pauly)
 
 ## Known issues
 * fails if you didn't confirm mobile location terms and conditions
-* fails if you have mobile verification enabled
+* fails if you have mobile verification enabled (aka 2 step authentication), no way to fix this
 
 ## TODO
 * add an option to change post visility
 * add posting to pages
+* make username and password input as argument
 
 ## License
- ----------------------------------------------------------------------------
- "THE BEER-WARE LICENSE" (Revision 42):
- <luka@pusic.si> wrote this file. As long as you retain this notice you
- can do whatever you want with this stuff. If we meet some day, and you think
- this stuff is worth it, you can buy me a beer in return. Luka Pusic
- ----------------------------------------------------------------------------
+[CC-BY-NC](https://creativecommons.org/licenses/by-nc/2.0/), [Luka Pusic](http://pusic.si)
