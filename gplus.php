@@ -4,8 +4,7 @@
  * Google+ (plus.google.com) PHP Curl bot
  * @since Sep 29 2011
  * @version 15.12.2011
- * @link http://360percents.com/
- * @author Luka Pušić <luka@pusic.si>
+ * @author Luka Pušić <luka@pusic.com>
  */
 /**
  * REQUIRED PARAMETERS
