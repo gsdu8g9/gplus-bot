@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # Google Plus status update bot
 
 * Contributors: [lukapusic](https://github.com/lukapusic)
